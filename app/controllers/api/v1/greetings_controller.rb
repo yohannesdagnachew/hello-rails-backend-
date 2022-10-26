@@ -1,6 +1,6 @@
 module Api
   module V1
-    class GreetingsController < ApplicationController # rubocop:todo Style/Documentation
+    class GreetingsController < ApplicationController
       def index
         @greetings = Greeting.find(rand(1..Greeting.count))
         render json: @greetings
